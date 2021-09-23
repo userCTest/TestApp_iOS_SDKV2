@@ -1,0 +1,35 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UsercentricsUI
+import Foundation
+import Swift
+import UIKit
+import Usercentrics
+@_hasMissingDesignatedInitializers public class UsercentricsUserInterface {
+  open class func getPredefinedUI(settings: UsercentricsUI.UsercentricsUISettings? = nil, dismissViewHandler: @escaping (UsercentricsUI.UsercentricsConsentUserResponse) -> Swift.Void) -> UIKit.UIViewController
+  @objc deinit
+}
+public struct UsercentricsUISettings {
+  public var customFont: UIKit.UIFont?
+  public var customLogo: UIKit.UIImage?
+  public var showCloseButton: Swift.Bool
+  public init(customFont: UIKit.UIFont? = nil, customLogo: UIKit.UIImage? = nil, showCloseButton: Swift.Bool = false)
+}
+public struct UsercentricsConsentUserResponse {
+  public let consents: [Usercentrics.UsercentricsServiceConsent]
+  public let controllerId: Swift.String
+  public let userInteraction: UsercentricsUI.UsercentricsUserInteraction
+}
+public enum UsercentricsUserInteraction {
+  case acceptAll
+  case denyAll
+  case granular
+  case noInteraction
+  public static func == (a: UsercentricsUI.UsercentricsUserInteraction, b: UsercentricsUI.UsercentricsUserInteraction) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension UsercentricsUI.UsercentricsUserInteraction : Swift.Equatable {}
+extension UsercentricsUI.UsercentricsUserInteraction : Swift.Hashable {}
