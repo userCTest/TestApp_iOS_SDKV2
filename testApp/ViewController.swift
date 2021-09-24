@@ -49,19 +49,6 @@ class ViewController: UIViewController {
         
     }
     
-    private func applyConsent(with consents: [UsercentricsServiceConsent]) {
-        for service in consents {
-            print("\(service.dataProcessor) - TemplateId: \(service.templateId) - Consent Value: \(service.status)")
-        }
-        print("Applying consent!")
-    }
-    
-    private func getTCData(){
-        //TODO
-        print("Showing TCDCata!")
-        
-    }
-    
     private func presentUsercentricsUI(showCloseButton: Bool) {
         let settings = UsercentricsUISettings(customFont: nil,
                                               customLogo: nil,
@@ -80,6 +67,65 @@ class ViewController: UIViewController {
         guard let ui = self.predefinedUI else { return }
         ui.modalPresentationStyle = .overFullScreen
         self.present(ui, animated: true, completion: nil)
+    }
+    
+    private func applyConsent(with consents: [UsercentricsServiceConsent]) {
+        for service in consents {
+            print("\(service.dataProcessor) - TemplateId: \(service.templateId) - Consent Value: \(service.status)")
+        }
+        print("Applying consent!")
+    }
+    
+    private func getTCData(){
+        //TODO
+        print("Showing TCDCata!")
+        UsercentricsCore.isReady { status in
+
+            // CMP Data
+            //val data = Usercentrics.instance.getCMPData()
+            //val settings = data.settings
+            //val tcfSettings = settings.tcf2
+
+            // TCF Data
+            let tcfData = UsercentricsCore.shared.getTCFData()
+            let purposes = tcfData.purposes
+            //let specialPurposes = tcfData.specialPurposes
+            //let features = tcfData.features
+            //let specialFeatures = tcfData.specialFeatures
+            //let stacks = tcfData.stacks
+            let vendors = tcfData.vendors
+
+            // Non-TCF Data - if you have services not included in IAB
+            //val services = data.services
+            //val categories = data.categories
+
+            // TCString
+            print("-- TCSTRING --")
+            let tcString = UsercentricsCore.shared.getTCString()
+            print("TCString: \(tcString)")
+
+            print("-- PURPOSES --")
+            let purposesList = purposes.sorted(by: { tcfVendor1, tcfVendor2 in
+                tcfVendor1.id < tcfVendor2.id })
+            
+            for purpose in purposesList {
+                print("\(purpose.name) - Id: \(purpose.id) - Consent: \(String(describing: purpose.consent)) - Legitimate Interest: \(String(describing: purpose.legitimateInterestConsent))")
+            }
+
+            print("-- VENDORS WITH CONSENT TRUE--")
+            var vendorsList = vendors.filter { tcfVendor in tcfVendor.consent == true }
+            vendorsList = vendorsList.sorted(by: { tcfVendor1, tcfVendor2 in
+                tcfVendor1.id < tcfVendor2.id })
+
+            for vendor in vendorsList {
+                print("\(vendor.name) - Id: \(vendor.id)")
+            }
+
+
+        } onFailure: { error in
+            print("Error on initialization: \(error.localizedDescription)")
+        }
+        
     }
 }
 

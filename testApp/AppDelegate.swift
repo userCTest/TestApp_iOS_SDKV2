@@ -13,19 +13,14 @@ import UsercentricsUI
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let settingsId = "ZDQes7xES"// "egLMgjg9j"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         /// Initialize Usercentrics with your configuration
-        let options = UsercentricsOptions(settingsId: "egLMgjg9j")
+        let options = UsercentricsOptions(settingsId: settingsId)
         options.loggerLevel = .debug
         UsercentricsCore.configure(options: options)
-
-        let rootNavigationController = UINavigationController(rootViewController: ViewController())
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = rootNavigationController
-        window?.makeKeyAndVisible()
-
         return true
     }
 }

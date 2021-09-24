@@ -17,10 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn_close" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VK9-EM-0d1">
-                                <rect key="frame" x="158" y="622" width="96" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6N-V3-yVD">
+                                <rect key="frame" x="135" y="397" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="00w-Qm-9KJ"/>
+                                    <constraint firstAttribute="width" constant="120" id="ecE-Bm-233"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Open CMP" backgroundImage="button_background.svg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZk-Sv-7ZA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btn_close" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VK9-EM-0d1">
+                                <rect key="frame" x="159" y="517" width="72" height="29"/>
                                 <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="0nC-z1-tvv"/>
+                                    <constraint firstAttribute="height" constant="29" id="PpU-qi-bjC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,30 +48,22 @@
                                     <action selector="btnCloseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uW-Hs-Cjc"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usercentrics" translatesAutoresizingMaskIntoConstraints="NO" id="IIa-SA-RjQ">
-                                <rect key="frame" x="68" y="182" width="278" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usercentrics" translatesAutoresizingMaskIntoConstraints="NO" id="IIa-SA-RjQ">
+                                <rect key="frame" x="93" y="295" width="219" height="64"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BD8-dW-vXs">
-                                <rect key="frame" x="-7" y="0.0" width="426" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.63139557840000005" green="0.1193342283" blue="0.1098788753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6N-V3-yVD">
-                                <rect key="frame" x="155" y="433" width="102" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Open CMP" backgroundImage="button_background.svg">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnGoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZk-Sv-7ZA"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IIa-SA-RjQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="5U1-vs-8Xh"/>
+                            <constraint firstItem="z6N-V3-yVD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6yc-6D-uDu"/>
+                            <constraint firstItem="z6N-V3-yVD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JEs-HQ-OIP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VK9-EM-0d1" secondAttribute="trailing" constant="159" id="TyT-ly-Wdn"/>
+                            <constraint firstItem="VK9-EM-0d1" firstAttribute="top" secondItem="z6N-V3-yVD" secondAttribute="bottom" constant="70" id="cXD-Ai-CTb"/>
+                            <constraint firstItem="VK9-EM-0d1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="cyk-Mv-w46"/>
+                            <constraint firstItem="z6N-V3-yVD" firstAttribute="top" secondItem="IIa-SA-RjQ" secondAttribute="bottom" constant="70" id="mIb-nR-TFj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIa-SA-RjQ" secondAttribute="trailing" constant="93" id="xWP-bx-3cT"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="btnClose" destination="VK9-EM-0d1" id="Wu7-tF-hoa"/>
@@ -69,6 +78,6 @@
     <resources>
         <image name="button_background.svg" width="1280" height="640"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
-        <image name="usercentrics" width="1280" height="268"/>
+        <image name="usercentrics" width="154" height="32"/>
     </resources>
 </document>
