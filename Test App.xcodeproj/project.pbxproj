@@ -14,6 +14,7 @@
 		B3000B6326135CE00068A157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3000B6226135CE00068A157 /* Assets.xcassets */; };
 		B3000B6626135CE00068A157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3000B6426135CE00068A157 /* LaunchScreen.storyboard */; };
 		B35EE56B26AED624009E9452 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = B35EE56826AED37A009E9452 /* fonts */; };
+		B3EA586A276751220061E1D4 /* AppInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA5869276751220061E1D4 /* AppInit.swift */; };
 		FC51EB9A36EBF738AAA523CD /* Pods_testApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8851D87B4CE09205AB6B7 /* Pods_testApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		B3000B6726135CE00068A157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B35EE56826AED37A009E9452 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		B35EE56A26AED58F009E9452 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = testApp/fonts; sourceTree = "<group>"; };
+		B3EA5869276751220061E1D4 /* AppInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInit.swift; sourceTree = "<group>"; };
 		CF77DE606261C2B3F6F9813F /* Pods-testApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testApp.debug.xcconfig"; path = "Target Support Files/Pods-testApp/Pods-testApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				B3000B6226135CE00068A157 /* Assets.xcassets */,
 				B3000B6426135CE00068A157 /* LaunchScreen.storyboard */,
 				B3000B6726135CE00068A157 /* Info.plist */,
+				B3EA5869276751220061E1D4 /* AppInit.swift */,
 			);
 			path = testApp;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3000B5E26135CDD0068A157 /* ViewController.swift in Sources */,
+				B3EA586A276751220061E1D4 /* AppInit.swift in Sources */,
 				B3000B5A26135CDD0068A157 /* AppDelegate.swift in Sources */,
 				B3000B5C26135CDD0068A157 /* SceneDelegate.swift in Sources */,
 			);

@@ -17,7 +17,6 @@
 				BA1D3CFD2B5A65ABD3E0A23194A9D8B1 /* PBXTargetDependency */,
 			);
 			name = UsercentricsUI;
-			productName = UsercentricsUI;
 		};
 		2D78BEC4523419693FAF53FD83F0CE42 /* Usercentrics */ = {
 			isa = PBXAggregateTarget;
@@ -28,7 +27,6 @@
 			dependencies = (
 			);
 			name = Usercentrics;
-			productName = Usercentrics;
 		};
 /* End PBXAggregateTarget section */
 
@@ -63,7 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008C13231B0CDEF7C68CBC93F0000EE9 /* UsercentricsUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = UsercentricsUI.xcframework; sourceTree = "<group>"; };
+		008C13231B0CDEF7C68CBC93F0000EE9 /* UsercentricsUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = UsercentricsUI.xcframework; sourceTree = "<group>"; };
 		1FF9C0DADAE682E82D4B206AF7D94C89 /* Pods-testApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testApp-Info.plist"; sourceTree = "<group>"; };
 		310B475BECC235355DF01CE383FF9D54 /* UsercentricsUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UsercentricsUI.debug.xcconfig; sourceTree = "<group>"; };
 		3993DAA50DA06C69B459276528D7A75B /* Pods-testApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testApp-frameworks.sh"; sourceTree = "<group>"; };
@@ -72,14 +70,14 @@
 		7E8BE6611253F9F306424C2681F588B9 /* Usercentrics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Usercentrics.debug.xcconfig; sourceTree = "<group>"; };
 		81E8B02C3250E2B4F053BBDE20872386 /* Pods-testApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testApp.modulemap"; sourceTree = "<group>"; };
 		91847CF0E969E8E9D6DF268B72126C29 /* UsercentricsUI-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "UsercentricsUI-xcframeworks.sh"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AD4BCC949168CB3FD9024ABD702141E3 /* Pods-testApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testApp-umbrella.h"; sourceTree = "<group>"; };
 		AE9F967AD018A99F3E177CF67B44EFD2 /* Usercentrics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Usercentrics.release.xcconfig; sourceTree = "<group>"; };
 		B47A17FC9D11E9525D4F5DE7E831C54F /* Pods-testApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		B7686C695F771E915BC115CA7F0C9103 /* Pods_testApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7686C695F771E915BC115CA7F0C9103 /* Pods_testApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testApp.framework; path = "Pods-testApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C367B78EE53C62425B4DF5EDC3550499 /* Usercentrics-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Usercentrics-xcframeworks.sh"; sourceTree = "<group>"; };
 		CF6D6828F9174F5A9C84DB87ABBCC487 /* Pods-testApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testApp.release.xcconfig"; sourceTree = "<group>"; };
-		D05F64D8F9B17F5FD2C93BAD98BF914F /* Usercentrics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = Usercentrics.xcframework; sourceTree = "<group>"; };
+		D05F64D8F9B17F5FD2C93BAD98BF914F /* Usercentrics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Usercentrics.xcframework; sourceTree = "<group>"; };
 		EC4AEA4B1431A0C02A1C582C57B31002 /* Pods-testApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FA363812E26ED2CDB94DD6B5A36D0366 /* Pods-testApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FD9EFC5E0C93211F549F693D6B8E4F64 /* Pods-testApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testApp-dummy.m"; sourceTree = "<group>"; };
@@ -114,6 +112,7 @@
 				45C7B7D6A3E8817B45A9D0E3B874F1C0 /* Frameworks */,
 				83AA4606A1714F01A81B6AB08D46BCCA /* Support Files */,
 			);
+			name = Usercentrics;
 			path = Usercentrics;
 			sourceTree = "<group>";
 		};
@@ -156,6 +155,7 @@
 				7DCF59954BB5F50A26E322A84067B894 /* Frameworks */,
 				23FBD1ABC0E323D9CEFC81C8F05AD1EA /* Support Files */,
 			);
+			name = UsercentricsUI;
 			path = UsercentricsUI;
 			sourceTree = "<group>";
 		};
@@ -263,7 +263,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -537,7 +537,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,7 +555,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -572,7 +572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -628,7 +628,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

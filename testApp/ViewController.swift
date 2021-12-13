@@ -12,7 +12,7 @@ import Usercentrics
 class ViewController: UIViewController {
     
     // Outlets
-    @IBOutlet weak var btnClose: UIButton!
+    @IBOutlet weak var btnReset: UIButton!
     @IBOutlet weak var btnGo: UIButton!
     
     // CMP vars
@@ -27,9 +27,11 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func btnCloseAction(_ sender: Any) {
-        UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
-        print("Tapped close button")
+    @IBAction func btnResetAction(_ sender: Any) {
+        //UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+        UsercentricsCore.reset()
+        print("Tapped reset button")
+        appInit()        
     }
     
     @IBAction func btnGoAction(_ sender: UIButton) {
@@ -82,9 +84,9 @@ class ViewController: UIViewController {
         UsercentricsCore.isReady { status in
 
             // CMP Data
-            //val data = Usercentrics.instance.getCMPData()
-            //val settings = data.settings
-            //val tcfSettings = settings.tcf2
+            let data = UsercentricsCore.shared.getCMPData()
+            //let settings = data.settings
+            //let tcfSettings = settings.tcf2
 
             // TCF Data
             let tcfData = UsercentricsCore.shared.getTCFData()
@@ -96,8 +98,10 @@ class ViewController: UIViewController {
             let vendors = tcfData.vendors
 
             // Non-TCF Data - if you have services not included in IAB
-            //val services = data.services
-            //val categories = data.categories
+            //let services = data.services
+            let categories = data.categories
+            print("-- CMP DATA --")
+            print("Categories: \(categories)")
 
             // TCString
             print("-- TCSTRING --")

@@ -1,12 +1,14 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UsercentricsUI
 import Foundation
 import Swift
 import UIKit
 import Usercentrics
+import _Concurrency
 @_hasMissingDesignatedInitializers public class UsercentricsUserInterface {
   open class func getPredefinedUI(settings: UsercentricsUI.UsercentricsUISettings? = nil, dismissViewHandler: @escaping (UsercentricsUI.UsercentricsConsentUserResponse) -> Swift.Void) -> UIKit.UIViewController
+  open class func getUI(navigation: UIKit.UINavigationController, dismissViewHandler: @escaping (UsercentricsUI.UsercentricsConsentUserResponse) -> Swift.Void)
   @objc deinit
 }
 public struct UsercentricsUISettings {
@@ -26,10 +28,10 @@ public enum UsercentricsUserInteraction {
   case granular
   case noInteraction
   public static func == (a: UsercentricsUI.UsercentricsUserInteraction, b: UsercentricsUI.UsercentricsUserInteraction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 extension UsercentricsUI.UsercentricsUserInteraction : Swift.Equatable {}
 extension UsercentricsUI.UsercentricsUserInteraction : Swift.Hashable {}

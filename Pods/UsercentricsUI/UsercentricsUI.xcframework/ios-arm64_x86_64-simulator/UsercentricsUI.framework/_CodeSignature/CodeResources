@@ -6,119 +6,119 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Zvtctl7KUe9uyr7qWYWRBgfVHDQ=
+		CBop5OpQSgsYK7jnz3V/gvzxRUI=
 		</data>
 		<key>ContentDetailViewCell.nib</key>
 		<data>
-		54Pi3tpjtg+pweXvsa4F2Ik/6DY=
+		9B9/K7AE5T+JQbfZprYiimlCHGc=
 		</data>
 		<key>ContentHeaderViewCell.nib</key>
 		<data>
-		p33IfCpkOtK7C4uTABD7WoN1EaI=
+		umVbgz4oG0LToS8TMsLo0tPYccA=
 		</data>
 		<key>ContentHeaderWithSwitchViewCell.nib</key>
 		<data>
-		77/29SD8NqJUFUPlNv2tb6pA93Y=
-		</data>
-		<key>ContentOptionViewCell.nib</key>
-		<data>
-		JelNRInSe0Q1RmqePIt6WxGdwI8=
+		oy5/+F6jEI/rtbh2GT77Mqnkce8=
 		</data>
 		<key>ContentWithButtonViewCell.nib</key>
 		<data>
-		smwdPlg85ll4nv3hM8LLQl2DNzs=
+		rtbAHfjdWTTfuidmRMO6LJwShYg=
+		</data>
+		<key>ContentWithSwitchCell.nib</key>
+		<data>
+		BpeOvBiKZg8gNCup7nWzrYJrwtc=
 		</data>
 		<key>ControllerIDViewCell.nib</key>
 		<data>
-		YJldI82LNS++01XX3MmKEn7jFKA=
+		0jETbsey7byXACgIPp0p5e5omiE=
 		</data>
 		<key>FooterToggleView.nib</key>
 		<data>
-		t+/I9sbwetNytWn5DiRH5XwA7u4=
+		Rx8SY9l3tdte25sATUKnDfZv+BQ=
 		</data>
 		<key>FooterView.nib</key>
 		<data>
-		ahW0BLQwlqKmZXWhYxaOqY3m2Tw=
+		Q+7hPMbeTkaHJbEv1LCM02K3V8c=
 		</data>
-		<key>HeaderTab.nib</key>
+		<key>HeaderTabView.nib</key>
 		<data>
-		c/K+RXJhZhPQxmmf/Bsz4m9tcls=
+		0Arhk7hGwxWXvTPgS3oEyNZQsLQ=
 		</data>
 		<key>HeaderView.nib</key>
 		<data>
-		LycsX/qlyWT6urw8tThkev56Hy0=
+		ltKdnpjyq5GOs6apquueMCxjB40=
 		</data>
 		<key>Headers/UsercentricsUI-Swift.h</key>
 		<data>
-		f+IENQ2UoCAOqYJpkK1DwArB5ls=
+		dTDTImfREnA2LFzCKBo8AGPFfqY=
 		</data>
 		<key>HistoryHeaderView.nib</key>
 		<data>
-		iQ/stAg9KPy5DMC7BXewmW+rPlU=
+		bQVRxfkwEROX6RJY5NlQJE1oQv8=
 		</data>
 		<key>HistoryItemView.nib</key>
 		<data>
-		psGYWGStQTXJ07k9Wv3pVKuAtHc=
+		CXgRFeiB/7dsAMBNbUcXs4H+cH0=
 		</data>
 		<key>HistorySectionViewCell.nib</key>
 		<data>
-		om/y+DsJRm1svYlzE6zLNkHaqhg=
+		+yMqwaAX21DNY9H2+wQY/4s98WE=
 		</data>
 		<key>HyperlinkContentDetailViewCell.nib</key>
 		<data>
-		zmfQMBzx2aJ+oD+Scs/aJBZ9C0k=
+		5RpuZk4/Ags5FsYqRhnPBaJvI94=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xG74Vx/SFeij2azhMdyvVz6sD7M=
+		o8a1ilmUCqlBoXDGn2xagDGI+lc=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		gtQqmt16xChlqeyAKmpOszr/X7k=
+		Zr3wiuTJHov0OjbrgRahaiwectM=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eaq92URMPbvN2FFqF2zJY9WJoow=
+		fv6CSkMgeINdCfFsbzNgeahMR3Q=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IsaiHp10zUTWc7c2/Iry2uQ/yG0=
+		wACI/dzb287t2Cf+orSUR7HoVF0=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		gtQqmt16xChlqeyAKmpOszr/X7k=
+		Zr3wiuTJHov0OjbrgRahaiwectM=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		eaq92URMPbvN2FFqF2zJY9WJoow=
+		fv6CSkMgeINdCfFsbzNgeahMR3Q=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		IsaiHp10zUTWc7c2/Iry2uQ/yG0=
+		wACI/dzb287t2Cf+orSUR7HoVF0=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		rZtMX0y23wR19csjtYdWj3iyuZY=
+		VDgI9WfSRNHLK450bioTeVFyaKU=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qeOuVCOtbZpg4eBhV3GQyhmA5Oc=
+		F1kzHtstW1MaOd2yuvxczULoQRg=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nJmbL07eUxr4m2MGrrF4dUmrIMo=
+		0xFmWPnNLzNUdxAAeWrH2+fNiJ4=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		rZtMX0y23wR19csjtYdWj3iyuZY=
+		VDgI9WfSRNHLK450bioTeVFyaKU=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		qeOuVCOtbZpg4eBhV3GQyhmA5Oc=
+		F1kzHtstW1MaOd2yuvxczULoQRg=
 		</data>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		nJmbL07eUxr4m2MGrrF4dUmrIMo=
+		0xFmWPnNLzNUdxAAeWrH2+fNiJ4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -126,31 +126,27 @@
 		</data>
 		<key>PopupTableViewCell.nib</key>
 		<data>
-		Z+4t7ubJoUxmxUtqilaPhdJ2gIE=
+		zb3YpHr+BPRzx/GW5XfMFE6MAXg=
 		</data>
 		<key>PopupViewController.nib</key>
 		<data>
-		FsXjBdGTKR+8e6QcQpMaNW2fPWc=
+		dNLklwDgBxKylyQHcuLJSHfRmMc=
 		</data>
 		<key>PoweredByView.nib</key>
 		<data>
-		ZeBrFSiwHIpEC6qW3LUsF14hsqc=
+		xXUGu1rhVTPqC/Df1UAou3ZiNO8=
 		</data>
 		<key>SimpleContentDetailViewCell.nib</key>
 		<data>
-		EF0/GBP+3z3gXUFz969PG7JUJho=
-		</data>
-		<key>SinglePageViewController.nib</key>
-		<data>
-		tNFmkAO9XWv5gl7Zd8Rf96eOtAo=
+		KPdHbXXDb2qRY0FPvZ4xHgsc3tQ=
 		</data>
 		<key>TokenCollectionCell.nib/objects-12.3+.nib</key>
 		<data>
-		92W1OPuh0dRVq2h1OfJcHgdiYYQ=
+		MP+XtRlJ0tIP6Y4oxkQaOYpUwPk=
 		</data>
 		<key>TokenCollectionCell.nib/runtime.nib</key>
 		<data>
-		YdJaluOZQU1Eif36QS4NVKx8yE8=
+		bBV5toYJpHt2EcPY2V2W4WDJiSo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -159,196 +155,196 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p1qAZP/ROR8C9V5EGSDmVawIdjYqNgD323aH4S5kFbk=
+			Dj6KkiU4I72MXz5h9WXrOfDDTFtQjARphzGv6ljl1aE=
 			</data>
 		</dict>
 		<key>ContentDetailViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yztl1QHL/u22kVIHFs2xzgesd3GXDsGiq3wANvEWehc=
+			RtkE1WEEwctLvVRgzT7OGj1z7Q7epxPGNLuuQ6Mc2v4=
 			</data>
 		</dict>
 		<key>ContentHeaderViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2h/Kh6Q5uCAWh1ntcfAmq1G+jedFZjzBhhtrXX8Ccn0=
+			itymimqhJAddlxDhz1Gqp0MbqHUDRtUUOcaMZqO0BOM=
 			</data>
 		</dict>
 		<key>ContentHeaderWithSwitchViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DixzuKayN4qXuvliEPD7uTOMBdyEyokEATvkQTgQLTc=
-			</data>
-		</dict>
-		<key>ContentOptionViewCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9WYLG6vtIYaCQLiRNYsSrsOCTc1SzI1X7Qjgo5J24W8=
+			Ov9NxuRUPMzPxyAr/nIGNwuczPLKFZMqQj+Lgtjr2YY=
 			</data>
 		</dict>
 		<key>ContentWithButtonViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9iOi28aLKtTbNp86kzsYzqWeXk4vkNr8N/D6MjyEBYo=
+			BkUmDkhabh7aWjtE3YX+SNrVnHLwkFZmNKmslpl24bY=
+			</data>
+		</dict>
+		<key>ContentWithSwitchCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3PWf7K976JlCv60LCR76QDBz8c1/vKRMO57d19P9/po=
 			</data>
 		</dict>
 		<key>ControllerIDViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			niBIHHqb/bYoOd9fFMKHGr4h1xkpM/zMh1vk+Tqqt0A=
+			2OdxG4lxKxp1GhZChkBp/2pD7pRVpbsZUp1fKQcPqGc=
 			</data>
 		</dict>
 		<key>FooterToggleView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NUq0pLAH8EOwWJD8a68OE7sPyAmZW1uLt62k2ktWQ4A=
+			deI+kj7FRWu5ldYsOzAO25JMmAR+KAZKCKdhyLKNebE=
 			</data>
 		</dict>
 		<key>FooterView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vvqtms4CBGPNGNLVfMhjGlR8xO8JFgVfw4L+P4TwdSs=
+			1sFyQW/99AURsBAXS548fMRVk0Otbe6E/OhBj5TsnMc=
 			</data>
 		</dict>
-		<key>HeaderTab.nib</key>
+		<key>HeaderTabView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DN25c0TYXYbdo+Wnd+pGHtfxTlRO9fle72TFTfuYdQg=
+			Yxv4HfkXosdi4/GfzWvbvVY8VPNaHwYCSYr4jfZ+AKs=
 			</data>
 		</dict>
 		<key>HeaderView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vq2LhZ8+TIgI/8PJ3Jt8ZtVrazoKCq41wDhLcbR9r6o=
+			sS3XiXAr3LTnwfm0fHlJJ1EuiZZYVP8u6nAJ+Wt9H84=
 			</data>
 		</dict>
 		<key>Headers/UsercentricsUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2pL09Yxmp/E5DpEjS5lJQmA4CVOj9QFhdWsIFtxcvfE=
+			rJM8+gTiGSGXHb/cOTjYwMopFM8KCZWdRfgv/8haWzQ=
 			</data>
 		</dict>
 		<key>HistoryHeaderView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hs51FuJw9tMziaGSPlykYbEn9sXLaS53M9AOWJd/OrA=
+			+ijSoIV3uGixnZmLTs6gy3rrUxBksH7aCd7B/ibaEQ4=
 			</data>
 		</dict>
 		<key>HistoryItemView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wobb2K8dhZFFZGn6UMh/DrtxtCI48q3N14uXl+6TTP8=
+			nltAhDWfiWTy/3z5952QgQCMsbYjSG3rHqNixkaldEQ=
 			</data>
 		</dict>
 		<key>HistorySectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dDrO02dyyqzHFQla23Pis/xq5URds97BhVhO9scPRkM=
+			qDzAOQMeClrHtjDsSEoOthPVifhRVpZTKFzOWpCo5lg=
 			</data>
 		</dict>
 		<key>HyperlinkContentDetailViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8UgRm8V9cxJkVHsie0ZI5duRREOhjf9Dhlz0G6Uyxhc=
+			oXp+K3nCSp+guULy0a4orG5F/rneR6qOdXGMb2nSfEA=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y26apk3yiOER2GmrsVEusdYuUkkgmFAx9gWD4oDJYVU=
+			C8Dpdyn5EkGBFOScnspljHHn2OqiZvgYQ2/JiOr39Ok=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5uog8ZO12xawIJ2c03IniJnnLhIK1O9ElMULClXYBxY=
+			ngu7w1OXz/EU5RhYO8sIEYu8SzHDwjmuzdxVay6kdlU=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/tJhX6iF4lXaNay2ZNQhHChlAO8G2wDnDUy9KSEQI0k=
+			XuYwSmjqnjA9wwKXKeEteaPNPnJeN8NlwwiK3tcoBuM=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y26apk3yiOER2GmrsVEusdYuUkkgmFAx9gWD4oDJYVU=
+			C8Dpdyn5EkGBFOScnspljHHn2OqiZvgYQ2/JiOr39Ok=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5uog8ZO12xawIJ2c03IniJnnLhIK1O9ElMULClXYBxY=
+			ngu7w1OXz/EU5RhYO8sIEYu8SzHDwjmuzdxVay6kdlU=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/tJhX6iF4lXaNay2ZNQhHChlAO8G2wDnDUy9KSEQI0k=
+			XuYwSmjqnjA9wwKXKeEteaPNPnJeN8NlwwiK3tcoBuM=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tVrhdJ0BWLRj8o+c8PGZhm+83G84QokM0FLLWnYeEmo=
+			t+fHCnJ6qZ88iIt5x/3YpE+FpHGcrMir75YjLZn3tt4=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2aiRiOXfKQjixqF9t9PcUfPRShHO/salenuM4gsKlQw=
+			zB+aN8MUcU8GjtaNEgwDKjB/g9jnJSsiYMQ9oqbsmx0=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ogy8QZqDi//J+GyZLJmN+oTtTJ9qV5d/fGJcEot4c0w=
+			VeQ8GFGf2E+e16ZHf9CLWKtOwlmgJL18MrPFHd7wQQQ=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tVrhdJ0BWLRj8o+c8PGZhm+83G84QokM0FLLWnYeEmo=
+			t+fHCnJ6qZ88iIt5x/3YpE+FpHGcrMir75YjLZn3tt4=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2aiRiOXfKQjixqF9t9PcUfPRShHO/salenuM4gsKlQw=
+			zB+aN8MUcU8GjtaNEgwDKjB/g9jnJSsiYMQ9oqbsmx0=
 			</data>
 		</dict>
 		<key>Modules/UsercentricsUI.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ogy8QZqDi//J+GyZLJmN+oTtTJ9qV5d/fGJcEot4c0w=
+			VeQ8GFGf2E+e16ZHf9CLWKtOwlmgJL18MrPFHd7wQQQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -362,49 +358,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vb0r9rnAsADX4U07x2HrF6wYP4anaPUS7v/5GAFhV2w=
+			+RDJAbgEjRuiF7AxeYzp6/a3+S6m5NP/8AMdHONXDLM=
 			</data>
 		</dict>
 		<key>PopupViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rxsVARY7IKJvf7fVGOY1gvhR2NBrw4fduBs0EFCfU84=
+			j7RL9mKj/wlfxBQ9PuM9Nj3wznf6B9T0gpVK3ibmCZo=
 			</data>
 		</dict>
 		<key>PoweredByView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kO6bTtBEKMwck5kv/dB6+w4B+Cp1koVLrqi2UdKRxhs=
+			HxgkX7/OsoOvgZ9nj3HcN8COzgJ0tOnh7SitOoo9H84=
 			</data>
 		</dict>
 		<key>SimpleContentDetailViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WrvyxpTe1FbeBXsxMhe7XzY8xZyGMPpuFTHv4u7nCnY=
-			</data>
-		</dict>
-		<key>SinglePageViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0SFTdPyeTXBuHXMDUKt8XZKZ07b33Iqt+J2ysLY3OmE=
+			x8+z8OKNDeksJL1MHySZeQujLjTZ8sL5WIAXVkRy+7w=
 			</data>
 		</dict>
 		<key>TokenCollectionCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qb+BIalXIYNgy8TvwZK7sAL/AapcDArCHBE50lXMY9A=
+			YOHA0NRrpCQbz/a/6SNSID6lbRDt2eN082eSX2d61HU=
 			</data>
 		</dict>
 		<key>TokenCollectionCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8tyFpREi7OPzCxdYSfTeganzdJI/LlwrTCypuLm2+BA=
+			EK5eKL8udoQGwbph1IRvIjueC/wiSfJrInp0tHyNzas=
 			</data>
 		</dict>
 	</dict>
