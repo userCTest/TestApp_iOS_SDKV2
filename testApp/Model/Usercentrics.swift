@@ -1,85 +1,45 @@
 //
-//  ViewController.swift
-//  Test App
+//  Usercentrics.swift
+//  testApp
 //
-//  Created by Rui Reis on 05/03/2021.
+//  Created by Hugo Silva on 12/01/2022.
 //
 
-import UIKit
-import UsercentricsUI
+import Foundation
 import Usercentrics
+import UsercentricsUI
+import UIKit
 
-class ViewController: UIViewController {
+struct Usercentrics {
     
-    // Outlets
-    @IBOutlet weak var btnReset: UIButton!
-    @IBOutlet weak var btnGo: UIButton!
+    private let sdkDefaults = SDKDefaults()
     
-    // CMP vars
-    let imageName = "usercentrics.jpg"
-    
-    // UIViewController
-    private var predefinedUI: UIViewController?
-
-    // Main View
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    func appInit(){
+        /// Initialize Usercentrics with your configuration
+        let options = UsercentricsOptions(settingsId: sdkDefaults.settingsId)
+        options.loggerLevel = .debug
+        UsercentricsCore.configure(options: options)
     }
     
-    @IBAction func btnResetAction(_ sender: Any) {
-        //UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+    func resetCMP(){
         UsercentricsCore.reset()
-        print("Tapped reset button")
-        appInit()        
+        self.appInit()
     }
     
-    @IBAction func btnGoAction(_ sender: UIButton) {
-        showCMP()
-        print("Showing CMP")
+    func getSettings(customFont: UIFont?, customLogo: UIImage?, showCloseButton: Bool = false) -> UsercentricsUISettings {
+        return UsercentricsUISettings(customFont: customFont,
+                                      customLogo: customLogo,
+                                      showCloseButton: showCloseButton)
     }
     
-    func showCMP(){
-        // egLMgjg9j
-        
-        UsercentricsCore.isReady { status in
-            self.presentUsercentricsUI(showCloseButton: true)
-            print("CMP shown")
-        } onFailure: { error in
-            print("Error on init: \(error.localizedDescription)")
-        }
-        
-    }
-    
-    private func presentUsercentricsUI(showCloseButton: Bool) {
-        let settings = UsercentricsUISettings(customFont: nil,
-                                              customLogo: nil,
-                                              showCloseButton: showCloseButton)
-
-        /// Get the UsercentricsUI and display it
-        predefinedUI = UsercentricsUserInterface.getPredefinedUI(settings: settings) { [weak self] response in
-            guard let self = self else { return }
-            /// Process consents
-            print("getPredefineUI callback")
-            self.applyConsent(with: response.consents)
-            self.getTCData()
-            self.dismiss(animated: true, completion: nil)
-        }
-
-        guard let ui = self.predefinedUI else { return }
-        ui.modalPresentationStyle = .overFullScreen
-        self.present(ui, animated: true, completion: nil)
-    }
-    
-    private func applyConsent(with consents: [UsercentricsServiceConsent]) {
+    func applyConsent(with consents: [UsercentricsServiceConsent]) {
         for service in consents {
             print("\(service.dataProcessor) - TemplateId: \(service.templateId) - Consent Value: \(service.status)")
         }
         print("Applying consent!")
     }
     
-    private func getTCData(){
-        //TODO
+    func getTCData(){
         print("Showing TCDCata!")
         UsercentricsCore.isReady { status in
 
@@ -129,7 +89,5 @@ class ViewController: UIViewController {
         } onFailure: { error in
             print("Error on initialization: \(error.localizedDescription)")
         }
-        
     }
 }
-
