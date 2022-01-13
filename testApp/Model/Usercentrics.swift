@@ -90,4 +90,35 @@ struct Usercentrics {
             print("Error on initialization: \(error.localizedDescription)")
         }
     }
+    
+    func presentBanner(navigationController: UINavigationController?) {
+        // Applies to First and Second Layer, and overwrites Admin Interface Styling Settings
+        let bannerSettings = BannerSettings(font: nil, logo: nil)
+
+        // Applies to First Layer, and overwrites General Settings
+        let firstLayerSettings = FirstLayerStyleSettings(//logo: <LogoSettings?>,
+                                                         //title: <TitleSettings?>,
+                                                        //message: <MessageSettings?>,
+                                                         //buttons: <[ButtonSettings]?>,
+                                                         //backgroundColor: <UIColor?>,
+                                                         //cornerRadius: <CGFloat?>,
+                                                         //overlayColor: UIColor?
+                                                        )
+        
+        // Create a UsercentricsUserInterface instance
+        let ui = UsercentricsBanner(bannerSettings: bannerSettings)
+
+        guard let nav = navigationController else {
+            fatalError("Error! Navigation Controller is nil.")
+        }
+            // Show First Layer and handle result
+            ui.showFirstLayer(hostView: nav, layout: UsercentricsLayout.full, settings: firstLayerSettings) { userResponse in
+                    // Apply Consent
+                    self.applyConsent(with: userResponse.consents)
+                    // Get Data
+                    self.getTCData()
+                    // Track User Interaction with userResponse.userInteraction (Only if and until your tracking service has consent)
+                    // Save controllerID in your own database with userResponse.controllerId (Needed for Cross-Device Consent Sharing)
+            }
+    }
 }
