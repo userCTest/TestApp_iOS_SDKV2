@@ -11,7 +11,7 @@ import UsercentricsUI
 import UIKit
 
 struct Usercentrics {
-    
+
     private let sdkDefaults = SDKDefaults()
     
     func appInit(){
@@ -91,6 +91,19 @@ struct Usercentrics {
         }
     }
     
+    func getLayout(_ layout: String?) -> UsercentricsLayout {
+        switch layout {
+        case "sheet":
+            return UsercentricsLayout.sheet
+        case "bottom":
+            return UsercentricsLayout.popup(position: PopupPosition.bottom)
+        case "center":
+            return UsercentricsLayout.popup(position: PopupPosition.center)
+        default:
+            return UsercentricsLayout.full
+        }
+        }
+    
     func presentBannerV1(viewController: UIViewController?) {
         guard let vc = viewController else {
             fatalError("Error! View Controller is nil.")
@@ -117,7 +130,7 @@ struct Usercentrics {
         vc.present(ui, animated: true, completion: nil)
     }
     
-    func presentBannerV2(navigationController: UINavigationController?) {
+    func presentBannerV2(navigationController: UINavigationController?, layout: String?) {
         // Applies to First and Second Layer, and overwrites Admin Interface Styling Settings
         let bannerSettings = BannerSettings(font: nil, logo: nil)
 
@@ -138,7 +151,7 @@ struct Usercentrics {
             fatalError("Error! Navigation Controller is nil.")
         }
             // Show First Layer and handle result
-            ui.showFirstLayer(hostView: nav, layout: UsercentricsLayout.full, settings: firstLayerSettings) { userResponse in
+        ui.showFirstLayer(hostView: nav, layout: self.getLayout(layout), settings: firstLayerSettings) { userResponse in
                     // Apply Consent
                     self.applyConsent(with: userResponse.consents)
                     // Get Data
