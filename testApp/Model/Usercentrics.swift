@@ -91,7 +91,33 @@ struct Usercentrics {
         }
     }
     
-    func presentBanner(navigationController: UINavigationController?) {
+    func presentBannerV1(viewController: UIViewController?) {
+        guard let vc = viewController else {
+            fatalError("Error! View Controller is nil.")
+        }
+        
+        var usercentricsUI: UIViewController?
+        
+        let settings = self.getSettings(customFont: nil, customLogo: nil, showCloseButton: true)
+        
+        usercentricsUI = UsercentricsUserInterface.getPredefinedUI (settings: settings) { userResponse in
+            // Apply Consent
+            self.applyConsent(with: userResponse.consents)
+
+            self.getTCData()
+
+            // Dismiss CMP
+            vc.dismiss(animated: true, completion: nil)
+        }
+        
+        // Present CMP
+        guard let ui = usercentricsUI else {
+                fatalError("Error! Usercentrics UI is nil.")
+        }
+        vc.present(ui, animated: true, completion: nil)
+    }
+    
+    func presentBannerV2(navigationController: UINavigationController?) {
         // Applies to First and Second Layer, and overwrites Admin Interface Styling Settings
         let bannerSettings = BannerSettings(font: nil, logo: nil)
 

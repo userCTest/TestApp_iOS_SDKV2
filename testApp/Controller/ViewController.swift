@@ -17,9 +17,6 @@ class ViewController: UIViewController {
     // Usercentrics
     let uc = Usercentrics()
     
-    // UIViewController
-    private var predefinedUI: UIViewController?
-
     // Main View
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +34,8 @@ class ViewController: UIViewController {
     
     private func showCMP(){
         UsercentricsCore.isReady { status in
-            self.uc.presentBanner(navigationController: self.navigationController)
+            self.uc.presentBannerV1(viewController: self)
+            //self.uc.presentBannerV2(navigationController: self.navigationController)
             print("CMP shown")
         } onFailure: { error in
             print("Error on init: \(error.localizedDescription)")
