@@ -21,25 +21,49 @@ struct Usercentrics {
         UsercentricsCore.configure(options: options)
     }
     
+    func showCMP(_ vc: UIViewController, buttonIdentifier: String?) {
+        UsercentricsCore.isReady { status in
+            // Order as displayed visualy on the Main Interface
+            switch buttonIdentifier {
+            case "1":
+                self.presentBannerV2(navigationController: vc.navigationController, layout: "full")
+            case "2":
+                self.presentBannerV2(navigationController: vc.navigationController, layout: "bottom")
+            case "3":
+                self.presentBannerV2(navigationController: vc.navigationController, layout: "center")
+            case "4":
+                self.presentBannerV2(navigationController: vc.navigationController, layout: "sheet")
+            case "5":
+                self.presentBannerV1(viewController: vc)
+            default:
+                print("Button isn't identifiable.")
+                return
+            }
+            print("CMP shown")
+        } onFailure: { error in
+            print("Error on init: \(error.localizedDescription)")
+        }
+    }
+    
     func resetCMP(){
         UsercentricsCore.reset()
         self.appInit()
     }
     
-    func getSettings(customFont: UIFont?, customLogo: UIImage?, showCloseButton: Bool = false) -> UsercentricsUISettings {
+    private func getSettings(customFont: UIFont?, customLogo: UIImage?, showCloseButton: Bool = false) -> UsercentricsUISettings {
         return UsercentricsUISettings(customFont: customFont,
                                       customLogo: customLogo,
                                       showCloseButton: showCloseButton)
     }
     
-    func applyConsent(with consents: [UsercentricsServiceConsent]) {
+    private func applyConsent(with consents: [UsercentricsServiceConsent]) {
         for service in consents {
             print("\(service.dataProcessor) - TemplateId: \(service.templateId) - Consent Value: \(service.status)")
         }
         print("Applying consent!")
     }
     
-    func getTCData(){
+    private func getTCData(){
         print("Showing TCDCata!")
         UsercentricsCore.isReady { status in
 
@@ -91,7 +115,7 @@ struct Usercentrics {
         }
     }
     
-    func getLayout(_ layout: String?) -> UsercentricsLayout {
+    private func getLayout(_ layout: String?) -> UsercentricsLayout {
         switch layout {
         case "sheet":
             return UsercentricsLayout.sheet
@@ -104,7 +128,7 @@ struct Usercentrics {
         }
         }
     
-    func presentBannerV1(viewController: UIViewController?) {
+    private func presentBannerV1(viewController: UIViewController?) {
         guard let vc = viewController else {
             fatalError("Error! View Controller is nil.")
         }
@@ -130,7 +154,7 @@ struct Usercentrics {
         vc.present(ui, animated: true, completion: nil)
     }
     
-    func presentBannerV2(navigationController: UINavigationController?, layout: String?) {
+    private func presentBannerV2(navigationController: UINavigationController?, layout: String?) {
         // Applies to First and Second Layer, and overwrites Admin Interface Styling Settings
         let bannerSettings = BannerSettings(font: nil, logo: nil)
 
