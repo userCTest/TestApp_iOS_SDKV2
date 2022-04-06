@@ -33,8 +33,6 @@ struct Usercentrics {
                 self.presentBannerV2(navigationController: vc.navigationController, layout: "center")
             case "4":
                 self.presentBannerV2(navigationController: vc.navigationController, layout: "sheet")
-            case "5":
-                self.presentBannerV1(viewController: vc)
             default:
                 print("Button isn't identifiable.")
                 return
@@ -50,63 +48,67 @@ struct Usercentrics {
         self.appInit()
     }
     
+    /*
     private func getSettings(customFont: UIFont?, customLogo: UIImage?, showCloseButton: Bool = false) -> UsercentricsUISettings {
         return UsercentricsUISettings(customFont: customFont,
                                       customLogo: customLogo,
                                       showCloseButton: showCloseButton)
     }
+    */
     
     private func applyConsent(with consents: [UsercentricsServiceConsent]) {
-        for service in consents {
-            print("\(service.dataProcessor) - TemplateId: \(service.templateId) - Consent Value: \(service.status)")
-        }
-        print("Applying consent!")
+        self.getCMPData(consents: consents)
     }
     
-    private func getTCData(){
-        print("Showing TCDCata!")
+    private func getCMPData(consents: [UsercentricsServiceConsent]){
         UsercentricsCore.isReady { status in
 
             // CMP Data
-            let data = UsercentricsCore.shared.getCMPData()
+            //let data = UsercentricsCore.shared.getCMPData()
             //let settings = data.settings
             //let tcfSettings = settings.tcf2
-
-            // TCF Data
-            let tcfData = UsercentricsCore.shared.getTCFData()
-            let purposes = tcfData.purposes
-            //let specialPurposes = tcfData.specialPurposes
-            //let features = tcfData.features
-            //let specialFeatures = tcfData.specialFeatures
-            //let stacks = tcfData.stacks
-            let vendors = tcfData.vendors
-
             // Non-TCF Data - if you have services not included in IAB
             //let services = data.services
-            let categories = data.categories
-            print("-- CMP DATA --")
-            print("Categories: \(categories)")
-
-            // TCString
-            print("-- TCSTRING --")
-            let tcString = UsercentricsCore.shared.getTCString()
-            print("TCString: \(tcString)")
-
-            print("-- PURPOSES --")
-            let purposesList = purposes.sorted(by: { tcfVendor1, tcfVendor2 in
-                tcfVendor1.id < tcfVendor2.id })
+            //let categories = data.categories
+            //print("-- CMP DATA --")
+            //print("Categories: \(categories)")
             
-            for purpose in purposesList {
-                print("\(purpose.name) - Id: \(purpose.id) - Consent: \(String(describing: purpose.consent)) - Legitimate Interest: \(String(describing: purpose.legitimateInterestConsent))")
+            print("-- GET CONSENTS -- ")
+            for consent in consents {
+                print("\(String(describing: consent.dataProcessor).padding(toLength: 40, withPad: " ", startingAt: 0)) | TemplateId: \(String(describing: consent.templateId).padding(toLength: 10, withPad: " ", startingAt: 0)) | Consent Status: \(String(describing: consent.status).padding(toLength: 10, withPad: " ", startingAt: 0)) ")
             }
+            
+            // TCF Data
+            UsercentricsCore.shared.getTCFData{ tcfData in
+                let purposes = tcfData.purposes
+                //let specialPurposes = tcfData.specialPurposes
+                //let features = tcfData.features
+                //let specialFeatures = tcfData.specialFeatures
+                //let stacks = tcfData.stacks
+                let vendors = tcfData.vendors
 
-            print("-- VENDORS WITH CONSENT TRUE--")
-            var vendorsList = vendors.filter { tcfVendor in tcfVendor.consent == true }
-            vendorsList = vendorsList.sorted(by: { tcfVendor1, tcfVendor2 in
-                tcfVendor1.id < tcfVendor2.id })
+                // TCString
+                print("-- TCSTRING --")
+                let tcString = tcfData.tcString
+                print("TCString: \(tcString)")
 
-            for vendor in vendorsList {
-                print("\(vendor.name) - Id: \(vendor.id)")
+                print("-- PURPOSES --")
+                let purposesList = purposes.sorted(by: { tcfVendor1, tcfVendor2 in
+                    tcfVendor1.id < tcfVendor2.id })
+                
+                for purpose in purposesList {
+                    print("\(String(describing: purpose.name).padding(toLength: 40, withPad: " ", startingAt: 0)) | Id: \(String(describing: purpose.id).padding(toLength: 10, withPad: " ", startingAt: 0)) | LI Toggle: \(String(describing: purpose.showLegitimateInterestToggle).padding(toLength: 10, withPad: " ", startingAt: 0))")
+                }
+
+                print("-- VENDORS WITH CONSENT TRUE--")
+                var vendorsList = vendors.filter { tcfVendor in tcfVendor.consent == true }
+                vendorsList = vendorsList.sorted(by: { tcfVendor1, tcfVendor2 in
+                    tcfVendor1.id < tcfVendor2.id })
+
+                for vendor in vendorsList {
+                    print("\(String(describing: vendor.name).padding(toLength: 40, withPad: " ", startingAt: 0)) | Id: \(String(describing: vendor.id).padding(toLength: 7, withPad: " ", startingAt: 0))")
+                }
+                
             }
 
 
@@ -128,6 +130,7 @@ struct Usercentrics {
         }
         }
     
+    /*
     private func presentBannerV1(viewController: UIViewController?) {
         guard let vc = viewController else {
             fatalError("Error! View Controller is nil.")
@@ -153,6 +156,7 @@ struct Usercentrics {
         }
         vc.present(ui, animated: true, completion: nil)
     }
+     */
     
     private func presentBannerV2(navigationController: UINavigationController?, layout: String?) {
         // Applies to First and Second Layer, and overwrites Admin Interface Styling Settings
@@ -178,8 +182,6 @@ struct Usercentrics {
         ui.showFirstLayer(hostView: nav, layout: self.getLayout(layout), settings: firstLayerSettings) { userResponse in
                     // Apply Consent
                     self.applyConsent(with: userResponse.consents)
-                    // Get Data
-                    self.getTCData()
                     // Track User Interaction with userResponse.userInteraction (Only if and until your tracking service has consent)
                     // Save controllerID in your own database with userResponse.controllerId (Needed for Cross-Device Consent Sharing)
             }

@@ -6,5 +6,5 @@ target 'testApp' do
   use_frameworks!
 
   # Pods for testApp
-  pod 'UsercentricsUI' , '2.2.0' #, '2.1.0'
+  pod 'UsercentricsUI' , '2.3.1' #, '2.1.0'
 end

@@ -8,6 +8,6 @@
 import Foundation
 
 struct SDKDefaults {
-    let settingsId: String = "gpEJSejXE"
+    let settingsId: String = "jjhXieyz5"
     let imageName = "usercentrics.jpg"
 }

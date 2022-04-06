@@ -1,10 +1,10 @@
 PODS:
-  - Usercentrics (2.2.0)
-  - UsercentricsUI (2.2.0):
-    - Usercentrics (= 2.2.0)
+  - Usercentrics (2.3.1)
+  - UsercentricsUI (2.3.1):
+    - Usercentrics (= 2.3.1)
 
 DEPENDENCIES:
-  - UsercentricsUI (= 2.2.0)
+  - UsercentricsUI (= 2.3.1)
 
 SPEC REPOS:
   trunk:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - UsercentricsUI
 
 SPEC CHECKSUMS:
-  Usercentrics: 1595c4e060ce89bc0974f6e0b5155ed2adcf28fc
-  UsercentricsUI: 5a6495ecb6888d507de0fa3d2f9fbed9fe1d9bc9
+  Usercentrics: 8722ab232cb10cfbbfdf64df5d34a80b8592b7bc
+  UsercentricsUI: ef9c7a848a723061f010cec9d4522d7ebbb1dd88
 
-PODFILE CHECKSUM: 28e3cf7c03a538a8daf2bf0a3565aeb4f85cc705
+PODFILE CHECKSUM: ba8495019b8df958040379bd21542e00950b2d27
 
 COCOAPODS: 1.11.2
