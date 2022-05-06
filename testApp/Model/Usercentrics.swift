@@ -73,6 +73,9 @@ struct Usercentrics {
             //print("-- CMP DATA --")
             //print("Categories: \(categories)")
             
+            print("-- BANNER MESSAGE --")
+            print(UsercentricsCore.shared.getCMPData().settings.bannerMessage)
+            
             print("-- GET CONSENTS -- ")
             for consent in consents {
                 print("\(String(describing: consent.dataProcessor).padding(toLength: 40, withPad: " ", startingAt: 0)) | TemplateId: \(String(describing: consent.templateId).padding(toLength: 10, withPad: " ", startingAt: 0)) | Consent Status: \(String(describing: consent.status).padding(toLength: 10, withPad: " ", startingAt: 0)) ")
@@ -80,6 +83,7 @@ struct Usercentrics {
             
             // TCF Data
             UsercentricsCore.shared.getTCFData{ tcfData in
+                //let tcfData = UsercentricsCore.shared.getTCFData()
                 let purposes = tcfData.purposes
                 //let specialPurposes = tcfData.specialPurposes
                 //let features = tcfData.features
@@ -89,6 +93,7 @@ struct Usercentrics {
 
                 // TCString
                 print("-- TCSTRING --")
+                //let tcString = UsercentricsCore.shared.getTCString()
                 let tcString = tcfData.tcString
                 print("TCString: \(tcString)")
 
@@ -160,8 +165,7 @@ struct Usercentrics {
     
     private func presentBannerV2(navigationController: UINavigationController?, layout: String?) {
         // Applies to First and Second Layer, and overwrites Admin Interface Styling Settings
-        let bannerSettings = BannerSettings(font: nil, logo: nil)
-
+        
         // Applies to First Layer, and overwrites General Settings
         let firstLayerSettings = FirstLayerStyleSettings(//logo: <LogoSettings?>,
                                                          //title: <TitleSettings?>,
@@ -171,6 +175,21 @@ struct Usercentrics {
                                                          //cornerRadius: <CGFloat?>,
                                                          //overlayColor: UIColor?
                                                         )
+        let secondLayerSettings = SecondLayerStyleSettings(//showCloseButton: true
+                                                        )
+
+        let bannerSettings = BannerSettings(
+           // font: nil,
+           // logo: nil,
+           // links: nil,
+           // firstLayerSettings: firstLayerSettings,
+           // secondLayerSettings: secondLayerSettings
+        )
+        
+        
+        //let firstLayerSettings = FirstLayerStyleSettings()
+        //let bannerSettings = BannerSettings(firstLayerSettings: firstLayerSettings)
+        //let banner = UsercentricsBanner(bannerSettings: bannerSettings)
         
         // Create a UsercentricsUserInterface instance
         let ui = UsercentricsBanner(bannerSettings: bannerSettings)
@@ -179,7 +198,7 @@ struct Usercentrics {
             fatalError("Error! Navigation Controller is nil.")
         }
             // Show First Layer and handle result
-        ui.showFirstLayer(hostView: nav, layout: self.getLayout(layout), settings: firstLayerSettings) { userResponse in
+        ui.showFirstLayer(hostView: nav, layout: self.getLayout(layout)) { userResponse in
                     // Apply Consent
                     self.applyConsent(with: userResponse.consents)
                     // Track User Interaction with userResponse.userInteraction (Only if and until your tracking service has consent)
